@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Counter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="counter-section">
+        <div class="heading"><h1>Passenger Counter</h1></div>
+        <div class="container">
+            <div class="count-display">
+                <h2 id="count">0</h2>
+            </div>
+            <div class="action-buttons d-flex">
+                <button class="buttons increment" onclick="increase()">Increase</button>
+                <button class="buttons decrement" onclick="decrease()">Decrease</button>
+                <button class="buttons reset" onclick="reset()">Reset</button>
+                <button class="buttons show-popup" onclick="showModal()">Show Popup</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <h2>Limit Reached</h2>
+            </div>
+            <div class="modal-body">
+                <p>The maximum passenger limit has been reached.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
