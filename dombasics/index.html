@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="example-section" id="example-one">
+        <h2 class="example-title" id="accessing-dom-elements">Accessing DOM Elements</h2>
+        <p class="example-paragraph" id="paragraph-one">This is a paragraph. Click button to change me!</p>
+        <button class="example-button" id="change-button">Change Text</button>
+    </section>
+    <div id="text-change-modal" class="modal">
+        <div id="text-change-modal-content" class="modal-content">
+            <h3>Text change for paragraph</h3>
+            <input type="text" id="new-text-input" placeholder="Enter new text here">
+            <button type="submit" id="change-text-button">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
